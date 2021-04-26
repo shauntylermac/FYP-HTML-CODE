@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Beal Boru</title>
+    <meta name="description" content="Beal Boru 360 - A-Frame">
+    <script src="assets/js/aframe-master.js"></script> 
+    <script src="assets/js/aframe-href-component.js"></script>
+    <script src="assets/js/aframe-dialog-popup-component.js"></script>
+
+
+  </head>
+  
+  <body>
+    <a-scene  inspector="url: https://aframe.io/releases/0.3.0/aframe-inspector.min.js">
+      <a-entity>
+        <a-camera cursor="rayOrigin: mouse" wasd-controls-enabled="false" look-controls="reverseMouseDrag: true">
+          
+      </a-camera>
+      </a-entity>
+
+      <a-entity
+      id="dialog"
+      position="0.2 3.1 -5"
+      rotation="20 90 0"
+      dialog-popup="
+      openIconImage: https://i.imgur.com/3IVJ1ak.jpg;
+      closeIconImage: https://i.imgur.com/OAXccsO.jpg;
+      image: https://i.imgur.com/9b9fIYf.png;
+      imageHeight: 1.5;
+      imageWidth:2.5;
+      closeIconColor: #ffa70f;    
+      title: Ringforts;
+        titleFont: roboto;
+        titleColor: #ffffff;
+        body: Ringforts are circular areas, measuring c.24-60m in diameter, usually enclosed with one or more earthen bank enclosures, often topped with a timber palisade.
+        The inhabitants were largely self sufficient, and it is not uncommon to have neighbouring ringforts, some of which may have may have served as an early medieval livestock pen. 
+        Traces of iron and bronze working have also been recovered suggesting some ringforts had very specific uses while others were multifunctional. 
+        (‘Unpublished Excavations: RINGFORTS’ 2021);
+        bodyFont: roboto;
+        bodyColor: #ffffff;
+        dialogBoxHeight: 5.5;
+        dialogBoxWidth: 3.5;
+        dialogBoxColor: #032cfc;
+        "></a-entity>
+
+      <a-sky img src="https://i.imgur.com/9W84ve4.jpg" title="source: imgur.com" rotation="0 0 0"> title="source: imgur.com" ></a-sky>
+    
+      <a-text font="kelsonsans" value="Beal Boru, " width="6" position="-0.5, 1, -1.5"
+              rotation="0 -15 0"></a-text>
+      <a-text font="kelsonsans" value="Ireland" width="4" position="1, 0.74, -1.5"
+              rotation="0 -15 0"></a-text>
+      <a-box
+          color="#2355E7"
+          width="2"
+          height="1.2"
+          depth="0.2"
+          rotation="15 90 0"
+          position="-4 5 -0.2">
+      </a-box>
+
+      
+<!-- Perspective View indexhtmlview3.html-->
+      <a-box 
+      color="#FF9C41" 
+      rotation="45 0 0" 
+      position="50 7 -1" 
+      width="0.2" height="4" depth="4" 
+      href="indexhtmlview3.html";></a-box>
+
+      <a-image href="indexhtmlview3.html"; 
+      id="pin drop" 
+      position="49 6.8 -1" 
+      rotation="0 90 0" height="4" width="4" 
+      img src="https://i.imgur.com/63O3FAw.png"
+      crossorigin="anonymous"></a-image>
+
+      <!-- Perspective View newindex.html-->
+      <a-box 
+      color="#FF9C41" 
+      rotation="45 90 0" 
+      position="20 30 -100" 
+      width="0.2" height="14" depth="14" 
+      href="indexhtmlview3.html";>
+    </a-box>
+
+    <a-image href="newindex.html"; 
+    id="pin drop" 
+    position="12 18 -60" 
+    rotation="0 0 0" height="8" width="8" 
+    img src="https://i.imgur.com/63O3FAw.png" 
+    crossorigin="anonymous"></a-image>
+
+    </a-scene>
+    
+    
+  </body>
+</html> 
